@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADmyBRAND Insights - Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading ADmyBRAND Insights...</p>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <span class="logo-text">ADmyBRAND</span>
+            </div>
+            <button id="sidebar-toggle" class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-page="dashboard">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item" data-page="campaigns">
+                <i class="fas fa-bullhorn"></i>
+                <span>Campaigns</span>
+            </a>
+            <a href="#" class="nav-item" data-page="analytics">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="nav-item" data-page="audience">
+                <i class="fas fa-users"></i>
+                <span>Audience</span>
+            </a>
+            <a href="#" class="nav-item" data-page="reports">
+                <i class="fas fa-file-alt"></i>
+                <span>Reports</span>
+            </a>
+            <a href="#" class="nav-item" data-page="settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Top Navbar -->
+        <header class="top-navbar">
+            <div class="navbar-left">
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title">Dashboard Overview</h1>
+            </div>
+            <div class="navbar-right">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search campaigns, metrics...">
+                </div>
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="User">
+                    <span>John Doe</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <main class="dashboard-content">
+            <!-- Dashboard Page -->
+            <div id="dashboard-page" class="page-content active">
+                <!-- Key Metrics Cards -->
+                <section class="metrics-grid">
+                    <div class="metric-card" data-metric="revenue">
+                        <div class="metric-header">
+                            <div class="metric-icon revenue">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+12.5%</span>
+                            </div>
+                        </div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-value="124590">$0</h3>
+                            <p class="metric-label">Total Revenue</p>
+                            <span class="metric-period">vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card" data-metric="users">
+                        <div class="metric-header">
+                            <div class="metric-icon users">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+8.3%</span>
+                            </div>
+                        </div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-value="25847">0</h3>
+                            <p class="metric-label">Total Users</p>
+                            <span class="metric-period">vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card" data-metric="conversions">
+                        <div class="metric-header">
+                            <div class="metric-icon conversions">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="metric-trend negative">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>-2.1%</span>
+                            </div>
+                        </div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-value="1247">0</h3>
+                            <p class="metric-label">Conversions</p>
+                            <span class="metric-period">vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card" data-metric="growth">
+                        <div class="metric-header">
+                            <div class="metric-icon growth">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+3.2%</span>
+                            </div>
+                        </div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-value="15.7">0%</h3>
+                            <p class="metric-label">Growth Rate</p>
+                            <span class="metric-period">vs last month</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="charts-section">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Revenue Overview</h3>
+                            <div class="chart-controls">
+                                <select class="chart-period">
+                                    <option value="30">Last 30 Days</option>
+                                    <option value="90">Last 90 Days</option>
+                                    <option value="365">Last Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="chart-wrapper" style="position: relative; height: 400px;">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="charts-row">
+                        <div class="chart-container half">
+                            <div class="chart-header">
+                                <h3>Traffic Sources</h3>
+                            </div>
+                            <div class="chart-wrapper" style="position: relative; height: 300px;">
+                                <canvas id="trafficChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-container half">
+                            <div class="chart-header">
+                                <h3>Device Breakdown</h3>
+                            </div>
+                            <div class="chart-wrapper" style="position: relative; height: 300px;">
+                                <canvas id="deviceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Real-time Metrics & Geographic Data -->
+                <section class="secondary-metrics">
+                    <div class="real-time-card">
+                        <div class="card-header">
+                            <h3>Real-time Metrics</h3>
+                            <div class="live-indicator">
+                                <span class="live-dot"></span>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <div class="real-time-grid">
+                            <div class="real-time-metric">
+                                <span class="rt-value" data-value="247">0</span>
+                                <span class="rt-label">Active Users</span>
+                            </div>
+                            <div class="real-time-metric">
+                                <span class="rt-value" data-value="1089">0</span>
+                                <span class="rt-label">Page Views</span>
+                            </div>
+                            <div class="real-time-metric">
+                                <span class="rt-value" data-value="42.3">0%</span>
+                                <span class="rt-label">Bounce Rate</span>
+                            </div>
+                            <div class="real-time-metric">
+                                <span class="rt-value">3:24</span>
+                                <span class="rt-label">Avg. Session</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="geographic-card">
+                        <div class="card-header">
+                            <h3>Top Countries</h3>
+                        </div>
+                        <div class="country-list">
+                            <div class="country-item">
+                                <span class="country-flag">🇺🇸</span>
+                                <span class="country-name">United States</span>
+                                <span class="country-percentage">34.2%</span>
+                            </div>
+                            <div class="country-item">
+                                <span class="country-flag">🇬🇧</span>
+                                <span class="country-name">United Kingdom</span>
+                                <span class="country-percentage">13.8%</span>
+                            </div>
+                            <div class="country-item">
+                                <span class="country-flag">🇨🇦</span>
+                                <span class="country-name">Canada</span>
+                                <span class="country-percentage">11.4%</span>
+                            </div>
+                            <div class="country-item">
+                                <span class="country-flag">🇦🇺</span>
+                                <span class="country-name">Australia</span>
+                                <span class="country-percentage">8.5%</span>
+                            </div>
+                            <div class="country-item">
+                                <span class="country-flag">🇩🇪</span>
+                                <span class="country-name">Germany</span>
+                                <span class="country-percentage">7.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Campaigns Page -->
+            <div id="campaigns-page" class="page-content">
+                <section class="table-section">
+                    <div class="table-header">
+                        <h3>Campaign Management</h3>
+                        <div class="table-controls">
+                            <div class="search-filter">
+                                <input type="text" id="table-search" placeholder="Search campaigns...">
+                            </div>
+                            <select id="status-filter" class="form-control">
+                                <option value="">All Status</option>
+                                <option value="Active">Active</option>
+                                <option value="Paused">Paused</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Draft">Draft</option>
+                            </select>
+                            <button class="btn btn--primary">New Campaign</button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table id="campaigns-table" class="data-table">
+                            <thead>
+                                <tr>
+                                    <th data-sort="name">Campaign Name <i class="fas fa-sort"></i></th>
+                                    <th data-sort="status">Status <i class="fas fa-sort"></i></th>
+                                    <th data-sort="budget">Budget <i class="fas fa-sort"></i></th>
+                                    <th data-sort="spent">Spent <i class="fas fa-sort"></i></th>
+                                    <th data-sort="impressions">Impressions <i class="fas fa-sort"></i></th>
+                                    <th data-sort="clicks">Clicks <i class="fas fa-sort"></i></th>
+                                    <th data-sort="ctr">CTR <i class="fas fa-sort"></i></th>
+                                    <th data-sort="cpc">CPC <i class="fas fa-sort"></i></th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Table rows will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-pagination">
+                        <div class="pagination-info">
+                            Showing <span id="showing-start">1</span> to <span id="showing-end">5</span> of <span id="total-records">6</span> campaigns
+                        </div>
+                        <div class="pagination-controls">
+                            <button id="prev-page" class="btn btn--outline">Previous</button>
+                            <div class="page-numbers" id="page-numbers"></div>
+                            <button id="next-page" class="btn btn--outline">Next</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Analytics Page -->
+            <div id="analytics-page" class="page-content">
+                <section class="page-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-chart-bar placeholder-icon"></i>
+                        <h2>Advanced Analytics</h2>
+                        <p>Detailed analytics and reporting tools will be available here.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Audience Page -->
+            <div id="audience-page" class="page-content">
+                <section class="page-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-users placeholder-icon"></i>
+                        <h2>Audience Insights</h2>
+                        <p>Audience demographics and behavior analysis coming soon.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Reports Page -->
+            <div id="reports-page" class="page-content">
+                <section class="page-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-file-alt placeholder-icon"></i>
+                        <h2>Reports & Exports</h2>
+                        <p>Generate and export detailed reports from this section.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Settings Page -->
+            <div id="settings-page" class="page-content">
+                <section class="page-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-cog placeholder-icon"></i>
+                        <h2>Settings & Configuration</h2>
+                        <p>Manage your dashboard preferences and account settings.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Overlay for mobile -->
+    <div id="overlay" class="overlay"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

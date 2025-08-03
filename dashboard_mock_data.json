@@ -1,0 +1,486 @@
+{
+  "key_metrics": {
+    "revenue": {
+      "value": 124590,
+      "growth": 12.5,
+      "period": "vs last month"
+    },
+    "users": {
+      "value": 25847,
+      "growth": 8.3,
+      "period": "vs last month"
+    },
+    "conversions": {
+      "value": 1247,
+      "growth": -2.1,
+      "period": "vs last month"
+    },
+    "growth_rate": {
+      "value": 15.7,
+      "growth": 3.2,
+      "period": "vs last month"
+    }
+  },
+  "line_chart": [
+    {
+      "date": "2025-07-04",
+      "revenue": 3758,
+      "users": 1025,
+      "conversions": 39
+    },
+    {
+      "date": "2025-07-05",
+      "revenue": 3321,
+      "users": 1037,
+      "conversions": 74
+    },
+    {
+      "date": "2025-07-06",
+      "revenue": 3287,
+      "users": 832,
+      "conversions": 34
+    },
+    {
+      "date": "2025-07-07",
+      "revenue": 3264,
+      "users": 1023,
+      "conversions": 75
+    },
+    {
+      "date": "2025-07-08",
+      "revenue": 2899,
+      "users": 815,
+      "conversions": 72
+    },
+    {
+      "date": "2025-07-09",
+      "revenue": 3864,
+      "users": 1077,
+      "conversions": 50
+    },
+    {
+      "date": "2025-07-10",
+      "revenue": 3130,
+      "users": 833,
+      "conversions": 36
+    },
+    {
+      "date": "2025-07-11",
+      "revenue": 3540,
+      "users": 828,
+      "conversions": 49
+    },
+    {
+      "date": "2025-07-12",
+      "revenue": 3703,
+      "users": 1006,
+      "conversions": 30
+    },
+    {
+      "date": "2025-07-13",
+      "revenue": 3142,
+      "users": 1109,
+      "conversions": 69
+    },
+    {
+      "date": "2025-07-14",
+      "revenue": 3876,
+      "users": 948,
+      "conversions": 46
+    },
+    {
+      "date": "2025-07-15",
+      "revenue": 4359,
+      "users": 857,
+      "conversions": 56
+    },
+    {
+      "date": "2025-07-16",
+      "revenue": 3941,
+      "users": 1075,
+      "conversions": 66
+    },
+    {
+      "date": "2025-07-17",
+      "revenue": 4180,
+      "users": 986,
+      "conversions": 61
+    },
+    {
+      "date": "2025-07-18",
+      "revenue": 3855,
+      "users": 819,
+      "conversions": 70
+    },
+    {
+      "date": "2025-07-19",
+      "revenue": 4511,
+      "users": 1110,
+      "conversions": 64
+    },
+    {
+      "date": "2025-07-20",
+      "revenue": 3721,
+      "users": 1020,
+      "conversions": 45
+    },
+    {
+      "date": "2025-07-21",
+      "revenue": 4797,
+      "users": 850,
+      "conversions": 39
+    },
+    {
+      "date": "2025-07-22",
+      "revenue": 4585,
+      "users": 993,
+      "conversions": 60
+    },
+    {
+      "date": "2025-07-23",
+      "revenue": 4777,
+      "users": 1022,
+      "conversions": 77
+    },
+    {
+      "date": "2025-07-24",
+      "revenue": 4161,
+      "users": 816,
+      "conversions": 49
+    },
+    {
+      "date": "2025-07-25",
+      "revenue": 4824,
+      "users": 952,
+      "conversions": 77
+    },
+    {
+      "date": "2025-07-26",
+      "revenue": 3876,
+      "users": 902,
+      "conversions": 80
+    },
+    {
+      "date": "2025-07-27",
+      "revenue": 3685,
+      "users": 863,
+      "conversions": 80
+    },
+    {
+      "date": "2025-07-28",
+      "revenue": 4463,
+      "users": 897,
+      "conversions": 51
+    },
+    {
+      "date": "2025-07-29",
+      "revenue": 4969,
+      "users": 1082,
+      "conversions": 39
+    },
+    {
+      "date": "2025-07-30",
+      "revenue": 3810,
+      "users": 1195,
+      "conversions": 70
+    },
+    {
+      "date": "2025-07-31",
+      "revenue": 5229,
+      "users": 922,
+      "conversions": 61
+    },
+    {
+      "date": "2025-08-01",
+      "revenue": 4446,
+      "users": 1058,
+      "conversions": 56
+    },
+    {
+      "date": "2025-08-02",
+      "revenue": 4564,
+      "users": 1044,
+      "conversions": 57
+    }
+  ],
+  "bar_chart": [
+    {
+      "source": "Organic Search",
+      "value": 8542,
+      "percentage": 42.1
+    },
+    {
+      "source": "Social Media",
+      "value": 5234,
+      "percentage": 25.8
+    },
+    {
+      "source": "Direct",
+      "value": 3456,
+      "percentage": 17.0
+    },
+    {
+      "source": "Email",
+      "value": 2134,
+      "percentage": 10.5
+    },
+    {
+      "source": "Referral",
+      "value": 934,
+      "percentage": 4.6
+    }
+  ],
+  "pie_chart": [
+    {
+      "device": "Desktop",
+      "value": 12847,
+      "percentage": 52.3
+    },
+    {
+      "device": "Mobile",
+      "value": 9234,
+      "percentage": 37.6
+    },
+    {
+      "device": "Tablet",
+      "value": 2477,
+      "percentage": 10.1
+    }
+  ],
+  "table_data": [
+    {
+      "id": "CAMP-1000",
+      "name": "Summer Sale 2024",
+      "status": "Paused",
+      "budget": 38230,
+      "spent": 39222,
+      "impressions": 321727,
+      "clicks": 9913,
+      "conversions": 68,
+      "ctr": 2.23,
+      "cpc": 3.09,
+      "created_date": "2025-05-28",
+      "end_date": "2025-09-02"
+    },
+    {
+      "id": "CAMP-1001",
+      "name": "Brand Awareness Q4",
+      "status": "Draft",
+      "budget": 37728,
+      "spent": 16210,
+      "impressions": 326711,
+      "clicks": 6571,
+      "conversions": 447,
+      "ctr": 1.49,
+      "cpc": 1.57,
+      "created_date": "2025-05-16",
+      "end_date": "2025-08-21"
+    },
+    {
+      "id": "CAMP-1002",
+      "name": "Product Launch Campaign",
+      "status": "Paused",
+      "budget": 34170,
+      "spent": 14900,
+      "impressions": 292544,
+      "clicks": 4327,
+      "conversions": 132,
+      "ctr": 4.48,
+      "cpc": 1.81,
+      "created_date": "2025-05-26",
+      "end_date": "2025-09-12"
+    },
+    {
+      "id": "CAMP-1003",
+      "name": "Holiday Special",
+      "status": "Completed",
+      "budget": 20550,
+      "spent": 24178,
+      "impressions": 691314,
+      "clicks": 2967,
+      "conversions": 138,
+      "ctr": 1.74,
+      "cpc": 1.45,
+      "created_date": "2025-06-13",
+      "end_date": "2025-08-31"
+    },
+    {
+      "id": "CAMP-1004",
+      "name": "Back to School",
+      "status": "Paused",
+      "budget": 24751,
+      "spent": 3049,
+      "impressions": 887685,
+      "clicks": 20203,
+      "conversions": 171,
+      "ctr": 2.16,
+      "cpc": 2.74,
+      "created_date": "2025-06-28",
+      "end_date": "2025-09-10"
+    },
+    {
+      "id": "CAMP-1005",
+      "name": "New Year Promotion",
+      "status": "Completed",
+      "budget": 16097,
+      "spent": 44641,
+      "impressions": 950302,
+      "clicks": 3095,
+      "conversions": 61,
+      "ctr": 4.03,
+      "cpc": 2.87,
+      "created_date": "2025-06-11",
+      "end_date": "2025-09-14"
+    },
+    {
+      "id": "CAMP-1006",
+      "name": "Valentine's Day",
+      "status": "Active",
+      "budget": 38397,
+      "spent": 27757,
+      "impressions": 205250,
+      "clicks": 19297,
+      "conversions": 282,
+      "ctr": 1.82,
+      "cpc": 1.33,
+      "created_date": "2025-06-05",
+      "end_date": "2025-09-12"
+    },
+    {
+      "id": "CAMP-1007",
+      "name": "Easter Campaign",
+      "status": "Paused",
+      "budget": 8761,
+      "spent": 44144,
+      "impressions": 236784,
+      "clicks": 14543,
+      "conversions": 280,
+      "ctr": 1.89,
+      "cpc": 2.43,
+      "created_date": "2025-07-24",
+      "end_date": "2025-09-09"
+    },
+    {
+      "id": "CAMP-1008",
+      "name": "Mother's Day Special",
+      "status": "Draft",
+      "budget": 49182,
+      "spent": 42189,
+      "impressions": 264795,
+      "clicks": 18152,
+      "conversions": 182,
+      "ctr": 3.9,
+      "cpc": 1.59,
+      "created_date": "2025-07-31",
+      "end_date": "2025-09-07"
+    },
+    {
+      "id": "CAMP-1009",
+      "name": "Father's Day Offer",
+      "status": "Completed",
+      "budget": 33677,
+      "spent": 4431,
+      "impressions": 403321,
+      "clicks": 4584,
+      "conversions": 446,
+      "ctr": 2.38,
+      "cpc": 1.45,
+      "created_date": "2025-05-26",
+      "end_date": "2025-08-19"
+    },
+    {
+      "id": "CAMP-1010",
+      "name": "Black Friday Deal",
+      "status": "Completed",
+      "budget": 5725,
+      "spent": 2467,
+      "impressions": 787540,
+      "clicks": 8281,
+      "conversions": 319,
+      "ctr": 3.37,
+      "cpc": 1.45,
+      "created_date": "2025-05-12",
+      "end_date": "2025-08-30"
+    },
+    {
+      "id": "CAMP-1011",
+      "name": "Cyber Monday Sale",
+      "status": "Paused",
+      "budget": 34019,
+      "spent": 3060,
+      "impressions": 166105,
+      "clicks": 10899,
+      "conversions": 391,
+      "ctr": 2.87,
+      "cpc": 1.02,
+      "created_date": "2025-06-09",
+      "end_date": "2025-09-29"
+    }
+  ],
+  "real_time": {
+    "active_users": 205,
+    "page_views": 584,
+    "bounce_rate": 35.6,
+    "avg_session_duration": "3:34",
+    "top_pages": [
+      {
+        "page": "/dashboard",
+        "views": 185
+      },
+      {
+        "page": "/products",
+        "views": 87
+      },
+      {
+        "page": "/about",
+        "views": 99
+      },
+      {
+        "page": "/contact",
+        "views": 74
+      },
+      {
+        "page": "/blog",
+        "views": 70
+      }
+    ]
+  },
+  "geographic": [
+    {
+      "country": "United States",
+      "users": 8542,
+      "percentage": 34.2
+    },
+    {
+      "country": "United Kingdom",
+      "users": 3456,
+      "percentage": 13.8
+    },
+    {
+      "country": "Canada",
+      "users": 2847,
+      "percentage": 11.4
+    },
+    {
+      "country": "Australia",
+      "users": 2134,
+      "percentage": 8.5
+    },
+    {
+      "country": "Germany",
+      "users": 1923,
+      "percentage": 7.7
+    },
+    {
+      "country": "France",
+      "users": 1456,
+      "percentage": 5.8
+    },
+    {
+      "country": "Others",
+      "users": 4489,
+      "percentage": 18.6
+    }
+  ],
+  "last_updated": "2025-08-03T13:08:40.216864"
+}
